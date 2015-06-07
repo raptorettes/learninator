@@ -1,0 +1,6 @@
+
+<div ng-repeat="post in categoryModel.posts">
+  <h2><a ui-sref="blog.post({category: &quot;{{categoryModel.cat}}&quot;, post:&quot;{{post.slug}}&quot;})">{{post.title}}</a></h2>
+</div>
+<!--	p {{post.tags}}-->
+<!--	p {{post.slug}}-->

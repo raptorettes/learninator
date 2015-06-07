@@ -1,0 +1,15 @@
+@import '../../bower_components/materialize/dist/css/materialize.css';
+footer {
+  background-image: url("../img/squid.png");
+  background-position: 33% 50%;
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+.tools a {
+  text-align: right;
+}
+h3 {
+  font-size: 2rem;
+}
+
+ /*# sourceMappingURL=master.css.map */

@@ -1,0 +1,11 @@
+
+div(ng-if='wikiModel.state.is("wiki")')
+	h3 Wiki
+	hr
+
+div(ng-repeat='(k, v) in wikiModel.contentSkeleton.wiki', ng-if='k!="items" && wikiModel.state.is("wiki")')
+	dl
+		dt(ng-repeat='wikipage in wikiModel.contentSkeleton.wiki.items')
+			a(ui-sref='wiki.page({category: "{{k}}", post:"{{post.slug}}"})') {{post.title}}
+
+div(ui-view='')
