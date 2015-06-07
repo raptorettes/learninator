@@ -1,0 +1,13 @@
+.navbar-fixed
+  nav.blue-grey.lighten-3
+    .nav-wrapper
+      ul
+        li
+          a(ui-sref='index') unravelling
+        li
+          a(ui-sref='blog') blog
+        li
+          a(ui-sref='wiki') wiki
+        - for k in site.pages
+          li
+            a(ui-sref='page({page:"#{k.slug}"})')=k.title	

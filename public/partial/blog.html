@@ -1,0 +1,12 @@
+
+<div ng-if="blogModel.state.is(&quot;blog&quot;)">
+  <h3>Posts</h3>
+  <hr/>
+</div>
+<div ng-repeat="(k, v) in blogModel.contentSkeleton.posts" ng-if="k!=&quot;items&quot; &amp;&amp; blogModel.state.is(&quot;blog&quot;)">
+  <h4>{{k}}</h4>
+  <dl>
+    <dt ng-repeat="post in blogModel.contentSkeleton.posts[k].items"><a ui-sref="blog.post({category: &quot;{{k}}&quot;, post:&quot;{{post.slug}}&quot;})">{{post.title}}</a></dt>
+  </dl>
+</div>
+<div ui-view=""></div>

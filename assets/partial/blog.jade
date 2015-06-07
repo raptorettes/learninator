@@ -1,0 +1,12 @@
+
+div(ng-if='blogModel.state.is("blog")')
+	h3 Posts
+	hr
+
+div(ng-repeat='(k, v) in blogModel.contentSkeleton.posts', ng-if='k!="items" && blogModel.state.is("blog")')
+	h4 {{k}}
+	dl
+		dt(ng-repeat='post in blogModel.contentSkeleton.posts[k].items')
+			a(ui-sref='blog.post({category: "{{k}}", post:"{{post.slug}}"})') {{post.title}}
+
+div(ui-view='')
