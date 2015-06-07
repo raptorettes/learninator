@@ -9,7 +9,9 @@ Frogs are delicious
 - run `npm install`
 - run `roots watch`
 - ???
-- get money
+- get MONEYHATS
+
+JIBBERS CRABST
 
 ### Deploying
 
